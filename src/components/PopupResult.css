@@ -1,0 +1,47 @@
+.PopupResult{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0,0,0, .5);
+  color: royalblue;
+}
+
+.PopupResult--content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  width: 40vw;
+  min-height: 40vh;
+  padding: 2.5rem 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.PopupResult--content--title{
+  margin-bottom: 1.5rem;
+}
+
+.btnClose{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: rotate(0);
+  transform-origin: center;
+  transition: transform .35s;
+}
+.btnClose:hover{
+  transform: rotate(90deg);
+}
