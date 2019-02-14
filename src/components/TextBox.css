@@ -1,0 +1,14 @@
+.TextBox{
+  background-color: #fff;
+  color: royalblue;
+  border: solid #e4e4e4 1px;
+  border-radius: 5px;
+  width: 90%;
+  height: 30vh;
+  padding: .65rem;
+  resize: none;
+}
+
+.TextBox:focus{
+  border-color: #4c8bff;
+}
