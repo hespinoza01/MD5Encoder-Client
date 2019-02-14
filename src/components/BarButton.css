@@ -1,0 +1,30 @@
+.BarButton{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.BarButton--btn{
+  display: inline-block;
+  padding: .5rem;
+  width: 48%;
+  border: solid #e4e4e4 1px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #9b9b9b;
+  font-size: 14px;
+  cursor: pointer;
+  transform: scale3d(1,1,1);
+  transform-origin: center center;
+  transition: transform .35s;
+}
+.BarButton--btn:active{
+  transform: scale3d(.95, .95, 1);
+}
+
+.BarButton--btn.primary{
+  background-color: rgba(65, 105, 225, .20);
+  border-color: #4977ff;
+  color: royalblue;
+}
