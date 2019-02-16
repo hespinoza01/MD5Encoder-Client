@@ -1,9 +1,18 @@
 import Config from './config';
 
-const EncodeResult = async (data) => {
-  let value = await fetch(`${Config.BaseURL}/${Config.ApiURL}/${data}`);
+const EncodeResult = (data, callback) => {
+  const xhr = new XMLHttpRequest(),
+        URL = `${Config.BaseURL}/${Config.ApiURL}/${data}`;
 
-  return (value.status === 200) ? value.json() : null;
+  xhr.onreadystatechange =  e => {
+    if(xhr.readyState === 4) {
+      let response = JSON.parse(e.target.responseText);
+      callback(response);
+    }
+  };
+
+  xhr.open('GET', URL, true);
+  xhr.send();
 };
 
 export default EncodeResult;

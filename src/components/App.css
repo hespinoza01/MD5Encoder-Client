@@ -1,0 +1,17 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 40vw;
+  min-height: 65vh;
+  padding: 2.5rem 1rem;
+  border-radius: 5px;
+
+  background-color: #fff;
+}
+
+.Main-Title{
+  color: royalblue;
+}
